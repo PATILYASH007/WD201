@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="registrationForm">
+        <h1>Registration Form</h1>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label>
+            <input type="checkbox" id="terms" name="terms" required> I accept the terms and conditions
+        </label>
+
+        <button type="submit">Register</button>
+    </form> 
+    <div class="styled-container">
+        <div class="extra-content">
+            <h2 class="entries-title">Entries</h2>
+            <div id="user-entries"></div> <!-- Table will be dynamically rendered here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
